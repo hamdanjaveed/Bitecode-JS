@@ -1,0 +1,33 @@
+* {
+    margin:0px;
+    padding:0px;
+}
+
+li {
+    display:inline-block;
+    padding:20px;
+}
+
+@media all and (max-width:666px) {
+    #one {
+        visibility:hidden;
+        position:absolute;
+    }
+
+    #two li {
+        display:block;
+    }
+}
+
+@media all and (min-width:667px) {
+    #one {
+        position:fixed;
+        top:0px;
+        right:60px;
+    }
+
+    #two {
+        visibility:hidden;
+        position:absolute;
+    }
+}
